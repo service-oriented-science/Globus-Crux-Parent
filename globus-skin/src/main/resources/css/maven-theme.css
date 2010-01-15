@@ -1,83 +1,152 @@
-.navcolumn{
-border-bottom: 1px solid gray;
+body {
+    padding: 0px 0px 10px 0px;
 }
 
-.navcolumn ul{
-padding: 3px 0;
-margin-left: 0;
-margin-top: 1px;
-margin-bottom: 0;
-font: bold 12px Verdana;
-list-style-type: none;
-text-align: left; /*set to left, center, or right to align the menu as desired*/
+body,td,select,input,li {
+    font-size: 13px;
 }
 
-.navcolumn li{
-display: inline;
-margin: 0;
+code {
+    font-family: Courier, monospace;
+    font-size: 13px;
 }
 
-.navcolumn li a{
-text-decoration: none;
-padding: 3px 7px;
-margin-right: 3px;
-border: 1px solid #778;
-color: #2d2b2b;
-background: white url(../images/bluetab.gif) top left repeat-x; /*THEME CHANGE HERE*/
+a {
+    text-decoration: none;
 }
 
-.navcolumn li a:visited{
-color: #2d2b2b;
+a:link {
+    color: #36a;
 }
 
-.navcolumn li a:hover{
-text-decoration: underline;
-color: #2d2b2b;
+a:visited {
+    color: #47a;
 }
 
-.navcolumn li.selected{
+a:active,a:hover {
+    color: #69c;
 }
 
-.navcolumn li.selected a{ /*selected main tab style */
-background-image: url(../images/bluetabactive.gif); /*THEME CHANGE HERE*/
-border-bottom-color: white;
+#legend li.externalLink {
+    background: url(../images/window-new.png) left top no-repeat;
+    padding-left: 18px;
 }
 
-.navcolumn li.selected a:hover{ /*selected main tab style */
-text-decoration: none;
+a.externalLink,a.externalLink:link,a.externalLink:visited,a.externalLink:active,a.externalLink:hover
+    {
+    background: url(../images/window-new.png) right center no-repeat;
+    padding-right: 18px;
 }
 
-/* ######### Style for Drop Down Menu ######### */
+#legend li.newWindow {
+    background: url(../images/window-new.png) left top no-repeat;
+    padding-left: 18px;
+}
 
-.dropmenudiv_b{
-position:absolute;
-top: 0;
-border: 1px solid #918d8d; /*THEME CHANGE HERE*/
-border-width: 0 1px;
-font:normal 12px Verdana;
-line-height:18px;
-z-index:100;
-background-color: white;
-width: 200px;
-visibility: hidden;
+a.newWindow,a.newWindow:link,a.newWindow:visited,a.newWindow:active,a.newWindow:hover
+    {
+    background: url(../images/window-new.png) right center no-repeat;
+    padding-right: 18px;
+}
+
+h2 {
+    padding: 4px 4px 4px 6px;
+    border: 1px solid #999;
+    color: #900;
+    background-color: #ddd;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+h3 {
+    padding: 4px 4px 4px 6px;
+    border: 1px solid #aaa;
+    color: #900;
+    background-color: #eee;
+    font-weight: normal;
+    font-size: large;
+}
+
+h4 {
+    padding: 4px 4px 4px 6px;
+    border: 1px solid #bbb;
+    color: #900;
+    background-color: #fff;
+    font-weight: normal;
+    font-size: large;
+}
+
+h5 {
+    padding: 4px 4px 4px 6px;
+    color: #900;
+    font-size: normal;
 }
 
 
-.dropmenudiv_b a{
-width: auto;
-display: block;
-text-indent: 5px;
-border: 0 solid #918d8d; /*THEME CHANGE HERE*/
-border-bottom-width: 1px;
-padding: 2px 0;
-text-decoration: none;
-color: black;
+p {
+    line-height: 1.3em;
+    font-size: small;
 }
 
-* html .dropmenudiv_b a{ /*IE only hack*/
-width: 100%;
+#breadcrumbs {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #ccc;
 }
 
-.dropmenudiv_b a:hover{ /*THEME CHANGE HERE*/
-background-color: #edf3f3;
+table.bodyTable th {
+    color: white;
+    background-color: #bbb;
+    text-align: left;
+    font-weight: bold;
+}
+
+table.bodyTable th,table.bodyTable td {
+    font-size: 1em;
+}
+
+table.bodyTable tr.a {
+    background-color: #ddd;
+}
+
+table.bodyTable tr.b {
+    background-color: #eee;
+}
+
+.source {
+    border: 1px solid #999;
+}
+
+dl {
+    padding: 4px 4px 4px 6px;
+    border: 1px solid #aaa;
+    background-color: #ffc;
+}
+
+dt {
+    color: #900;
+}
+
+#organizationLogo img,#projectLogo img,#projectLogo span {
+    margin: 8px;
+}
+
+#banner {
+    border-bottom: 1px solid #fff;
+}
+
+.errormark,.warningmark,.donemark,.infomark {
+    background: url(../images/dialog-error.png) no-repeat;
+}
+
+.warningmark {
+    background-image: url(../images/dialog-warning.png);
+}
+
+.donemark {
+    background-image: url(../images/dialog-apply.png);
+}
+
+.infomark {
+    background-image: url(../images/dialog-information.png);
 }
